@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的视频作品集</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+        body{background:#f7f7f7;padding:30px max(15px, 5vw);color:#222;max-width:1200px;margin:0 auto;}
+        h1{text-align:center;margin-bottom:40px;font-weight:500}
+        .work-gallery{
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px,1fr));
+            gap:32px;
+        }
+        .work-item{
+            background:#fff;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 2px 12px #00000012;
+        }
+        video{
+            width:100%;
+            display:block;
+        }
+        img{
+            width:100%;
+            display:block;
+            /* 可选：图片高度统一，防止图片长短不一卡片高低不齐 */
+            object-fit:cover;
+            max-height:420px;
+        }
+        .work-desc{padding:18px}
+        .work-desc h3{margin-bottom:8px}
+        .work-desc p{color:#666;font-size:14px;line-height:1.5}
+    </style>
+</head>
+<body>
+    <h1>个人作品集</h1>
+    <div class="work-gallery">
+        <!-- 视频1 -->
+        <div class="work-item">
+            <video controls >
+                <source src="videos/hbmy.mp4" type="video/mp4">
+                你的浏览器不支持视频播放
+            </video>
+            <div class="work-desc">
+                <h3>河美传之欢迎报考河北美术学院（节选）</h3>
+                <p>扫描学校手册可以出现图中的校内3D建筑和介绍。</p>
+            </div>
+        </div>
+        <!-- 视频2 -->
+        <div class="work-item">
+            <video controls>
+                <source src="videos/warandpeace.mp4" type="video/mp4">
+                你的浏览器不支持视频播放
+            </video>
+            <div class="work-desc">
+                <h3>战争与和平（节选）</h3>
+                <p>玩家以一封无名家书为线索，探索剧情，体验战争的残酷。</p>
+            </div>
+        </div>
+        <!-- 视频3 -->
+        <div class="work-item">
+            <video controls >
+                <source src="videos/flower.mp4" type="video/mp4">
+                你的浏览器不支持视频播放
+            </video>
+            <div class="work-desc">
+                <h3>掌中舒卷</h3>
+                <p>通过手势控制花朵的张合与种类的切换。</p>
+            </div>
+        </div>
+
+        <!-- ====== 图片作品1 复制增加更多图片 ====== -->
+        <div class="work-item">
+            <img src="images/animal.jpg" alt="海报作品">
+            <div class="work-desc">
+                <h3>图标设计</h3>
+                <p>黑龙江野生动物图标设计</p>
+            </div>
+        </div>
+        <!-- ====== 图片作品2 ====== -->
+        <div class="work-item">
+            <img src="images/butterfly.jpg" alt="概念图">
+            <div class="work-desc">
+                <h3>信息可视化设计</h3>
+                <p>蝴蝶种类信息可视化设计</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
